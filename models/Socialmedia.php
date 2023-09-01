@@ -1,0 +1,2 @@
+<?php
+ class SocialMedia extends Conectar { public function get_socialmedia() { $conectar = parent::Conexion(); parent::set_names(); $sql = "\x53\105\114\x45\x43\x54\x20\x2a\x20\x46\122\117\115\x20\164\155\x5f\x73\157\x63\x69\x61\x6c\155\x65\144\x69\x61\x20\127\x48\105\x52\105\x20\x65\x73\164\x3d\x31"; $sql = $conectar->prepare($sql); $sql->execute(); return $resultado = $sql->fetchAll(PDO::FETCH_ASSOC); } } ?>

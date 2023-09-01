@@ -1,0 +1,2 @@
+<?php
+ class Lenguajes extends Conectar { public function get_lenguajes() { $conectar = parent::Conexion(); parent::set_names(); $sql = "\123\105\x4c\105\103\x54\x20\x2a\40\x46\x52\117\115\40\x74\155\x5f\154\145\156\x67\x75\141\147\x65\x73\40\127\x48\105\122\105\40\145\x73\x74\75\x31"; $sql = $conectar->prepare($sql); $sql->execute(); return $resultado = $sql->fetchAll(PDO::FETCH_ASSOC); } } ?>
